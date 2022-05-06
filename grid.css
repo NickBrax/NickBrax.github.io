@@ -1,0 +1,83 @@
+.parent {
+    height: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.header,
+.content,
+.footer,
+.menu {
+    padding: 10px;
+    color: rgb(255, 247, 247);
+    font-family: 'Times New Roman', Times, serif
+}
+
+.header {
+    background-color: rgb(4, 4, 105);
+    grid-area: h;
+}
+
+.menu {
+    background-color: rgb(7, 155, 155);
+    grid-area: m;
+}
+
+.content {
+    background-color: rgb(8, 125, 133);
+    grid-area: c;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(10, 70, 39);
+}
+
+.content2 {
+    background-color: rgb(8, 125, 133);
+    grid-area: c;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.p1 {
+    font-weight: bolder;
+    font-size: small;
+    color: rgb(8, 8, 67);
+    
+}
+
+.footer {
+    background-color: rgb(33, 19, 221);
+    grid-area: f;
+}
+
+@media (min-width: 768px) {
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f"; 
+    }
+}
+
+@media screen and (min-width: 1280px) {
+.parent {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 40px auto 40px;
+        grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "f f f f f f f f f f f f"; 
+    }
+}
+
