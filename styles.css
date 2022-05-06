@@ -6,6 +6,10 @@ html, body {
   margin: 0px;
 }
 
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
 .image1 {
   display: block;
   margin-left: 0px;
