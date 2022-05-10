@@ -61,10 +61,11 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px auto 40px;
+    grid-template-rows: 40px auto auto 40px;
     grid-template-areas: 
     "h h h h h h h h h h h h"
-    "m c c c c c c c c c c c"
+    "m m m m m m m m m m m m"
+    "c c c c c c c c c c c c"
     "f f f f f f f f f f f f"; 
     }
 }
