@@ -9,11 +9,7 @@
 
   <body>
     <img src="NickOwnage Banner1.jpg" class="image1" />
-    &nbsp;
-
     <div class="parent">
-      <div class="header">NickOwnage - The Gamer Website</div>
-
       <div class="menu">
         <nav>
           <a href="./index.html">Home</a>
@@ -45,18 +41,30 @@
 
       <div class="content2">
         <h1 class="header1">Contact</h1>
+
         <form name="contact" netlify>
-          <div><input type="text" value="Name" /></div>
-          <div><input type="email" value="Email" /></div>
-          <textarea rows="10" cols="21">Enter your message</textarea>
-          <div><input type="file" /></div>
-          <div><input type="submit" /></div>
+          <label for="fullname">Name</label>
+          <input type="text" id="fullname" value="Your name.." />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" value="Your email.." />
+
+          <label for="message">Subject</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="file" />
+          <input type="submit" />
         </form>
 
         &nbsp;
       </div>
 
-      <div class="footer">Disclaimer</div>
+      <div class="footer">© 2022 Website by Nick Braxhoofden</div>
     </div>
   </body>
 </html>
