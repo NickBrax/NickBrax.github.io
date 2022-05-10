@@ -31,6 +31,7 @@
 .content {
     background-color: rgb(8, 125, 133);
     grid-area: c;
+    padding: 50px;
     text-align: center;
     font-size: medium;
     font-weight: bolder;
@@ -57,7 +58,7 @@
     grid-area: f;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
